@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dualseelen / Twin Flame 11:11 Portal – Live aus Rom</title>
+<style>
+  :root { --bg:#0f172a; --muted:#94a3b8; --text:#e5e7eb; --accent:#a78bfa; --button:#22c55e; }
+  html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0b1222);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;line-height:1.5}
+  .wrap{max-width:980px;margin:0 auto;padding:24px}
+  .hero{padding:12px 16px;text-align:center}
+  h1{font-size:clamp(28px,4vw,40px);margin:6px 0}
+  .sub{color:#94a3b8;margin:6px 0 16px}
+  .tabs{display:flex;gap:8px;justify-content:center;margin:12px 0 16px}
+  .tab{border:1px solid #334155;color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer;background:#0b1324}
+  .tab.active{background:#a78bfa;border-color:#a78bfa;color:#0b1020;font-weight:600}
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:960px){.grid{grid-template-columns:1.2fr .8fr}}
+  .card{background:#0e162a;border:1px solid #233045;border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  h2{font-size:20px;margin:0 0 6px}
+  ul{padding-left:18px;margin:8px 0}
+  .pill{display:inline-block;background:#15223a;border:1px solid #2a3b5e;border-radius:999px;padding:6px 10px;color:#94a3b8;font-size:14px}
+  .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .price{font-weight:700;background:#15223a;border:1px solid #2a3b5e;border-radius:10px;padding:6px 10px}
+  .cta{display:inline-block;margin-top:10px;background:#22c55e;color:#052e1a;font-weight:700;text-decoration:none;padding:12px 16px;border-radius:12px}
+  .cta:hover{filter:brightness(1.1)}
+  .foot{color:#94a3b8;font-size:12px;text-align:center;margin-top:18px}
+  .hr{height:1px;background:#22324f;margin:16px 0;border-radius:1px}
+  .hidden{display:none}
+  .badge{display:inline-block;background:#1d263d;border:1px solid #304066;border-radius:8px;padding:4px 8px;margin:2px 6px 0 0;font-size:12px;color:#a5b4fc}
+  .note{font-size:13px;color:#94a3b8}
+  .big{font-size:18px}
+  .heroimg{overflow:hidden;border-radius:16px;border:1px solid #233045;box-shadow:0 10px 30px rgba(0,0,0,.25);margin:8px auto 10px}
+  .heroimg img{width:100%;max-height:360px;object-fit:cover;display:block}
+  .sideimg{overflow:hidden;border-radius:16px;border:1px solid #233045}
+  .sideimg img{width:100%;height:auto;display:block}
+  .cap{font-size:12px;color:#94a3b8;margin-top:6px;text-align:center}
+</style>
+<script>
+const STR = {
+  de: {
+    badge1: "Live aus Rom · Zoom",
+    badge2: "60 Minuten",
+    price: "$49",
+    title: "Dualseelen 11:11 Portal – Live aus Rom",
+    sub: "Live aus der Ewigen Stadt – Vorbereitung auf das 11:11-Portal mit Herzöffnung, geführter Rom-Aktivierung, einem 11:11-Ritual & 7-Tage-Plan für deine Harmonische Union.",
+    date1: "Sonntag, 9. November 2025",
+    time1: "20:00 (Berlin-Zeit)",
+    book: "Jetzt buchen (PayPal)",
+    imgCap: "Rom – die Ewige Stadt für deine ewige Liebe"
+  },
+  en: {
+    badge1: "Live from Rome · Zoom",
+    badge2: "60 minutes",
+    price: "$49",
+    title: "Twin Flame 11:11 Portal – Live from Rome",
+    sub: "Live from the Eternal City – prepare for the 11:11 portal with a heart-opening Rome activation, guided ritual and a 7-day plan into Harmonious Union.",
+    date1: "Sunday, Nov 9, 2025",
+    time1: "4:00 pm EST",
+    book: "Book now (PayPal)",
+    imgCap: "Rome – the Eternal City for your eternal love"
+  }
+};
+function show(tab){
+  document.querySelectorAll('.lang').forEach(el=>el.classList.add('hidden'));
+  document.getElementById(tab).classList.remove('hidden');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelector('[data-tab="'+tab+'"]').classList.add('active');
+  const s = STR[tab];
+  document.getElementById('b1').innerText = s.badge1;
+  document.getElementById('b2').innerText = s.badge2;
+  document.getElementById('b3').innerText = s.price;
+  document.getElementById('title').innerText = s.title;
+  document.getElementById('sub').innerText = s.sub;
+  document.querySelectorAll('.date1').forEach(n=>n.innerText = s.date1);
+  document.querySelectorAll('.time1').forEach(n=>n.innerText = s.time1);
+  document.querySelectorAll('.imgCap').forEach(n=>n.innerText = s.imgCap);
+  document.querySelectorAll('.cta.de, .cta.en').forEach(btn=>{
+    if(btn.classList.contains('de')) btn.innerText = STR.de.book;
+    if(btn.classList.contains('en')) btn.innerText = STR.en.book;
+  });
+}
+document.addEventListener('DOMContentLoaded', ()=>show('de'));
+</script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="heroimg">
+        <!-- Hero-Bild: dein Trevi-Fountain Banner -->
+        <img src="images/rome-trevi.png" alt="Rome Trevi Fountain hero" onerror="this.closest('.heroimg').style.display='none'">
+      </div>
+      <div class="row" style="justify-content:center;gap:12px;">
+        <span id="b1" class="badge"></span>
+        <span id="b2" class="badge"></span>
+        <span id="b3" class="badge"></span>
+      </div>
+      <h1 id="title"></h1>
+      <p id="sub" class="sub"></p>
+      <div class="tabs">
+        <button class="tab active" data-tab="de" onclick="show('de')">Deutsch</button>
+        <button class="tab" data-tab="en" onclick="show('en')">English</button>
+      </div>
+    </div>
+
+    <!-- Deutsch -->
+    <div id="de" class="lang">
+      <div class="grid">
+        <div class="card">
+          <h2>Was du bekommst</h2>
+          <ul class="big">
+            <li>Persönlicher gechannelter Impuls aus Rom</li>
+            <li>Geführte Herz- & Rom-Aktivierungsmeditation</li>
+            <li>11:11-Entscheidungsritual für deine Dualseelenreise</li>
+            <li>Sanftes Heil-Protokoll für deine größte Blockade</li>
+            <li>7-Tage Plan rund um den 11.11. für Momentum</li>
+          </ul>
+          <div class="hr"></div>
+          <div class="row">
+            <span class="pill date1"></span>
+            <span class="pill time1"></span>
+            <span class="pill">Zoom · Link nach Buchung</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="sideimg">
+            <!-- dein Foto -->
+            <img src="images/fabian.jpg" alt="Fabian – Workshop Host" onerror="this.closest('.sideimg').style.display='none'">
+          </div>
+          <p class="cap imgCap"></p>
+          <div class="hr"></div>
+          <h2>Buchen</h2>
+          <p class="note">Klicke auf den Button, buche sicher über PayPal und erhalte anschließend alle Infos per E-Mail.</p>
+          <!-- deutscher PayPal-Link wie beim Athen-Workshop -->
+          <a class="cta de" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CN5BFU3AYKR6L" target="_blank" rel="noopener">Jetzt buchen (PayPal)</a>
+          <div class="hr"></div>
+          <div class="row">
+            <span class="price">$49</span>
+            <span class="note">Personalisiertes PDF nach dem Event inklusive.</span>
+          </div>
+        </div>
+      </div>
+      <p class="foot">Hinweis: Spirituelle Praxis & Coaching, keine Therapie/Medizin. Nimm, was dient.</p>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="lang hidden">
+      <div class="grid">
+        <div class="card">
+          <h2>What you’ll get</h2>
+          <ul class="big">
+            <li>Personal channeled impulse from Rome</li>
+            <li>Guided heart & Rome activation meditation</li>
+            <li>11:11 decision ritual for your Twin Flame journey</li>
+            <li>Gentle healing protocol for your main block</li>
+            <li>7-day preparation plan around 11:11 for momentum</li>
+          </ul>
+          <div class="hr"></div>
+          <div class="row">
+            <span class="pill date1"></span>
+            <span class="pill time1"></span>
+            <span class="pill">Zoom · link after booking</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="sideimg">
+            <!-- dein Foto -->
+            <img src="images/fabian.jpg" alt="Fabian — Workshop Host" onerror="this.closest('.sideimg').style.display='none'">
+          </div>
+          <p class="cap imgCap"></p>
+          <div class="hr"></div>
+          <h2>Book</h2>
+          <p class="note">Click the button, book securely via PayPal, and you’ll receive all details by email.</p>
+          <!-- englischer PayPal-Link wie beim Athen-Workshop -->
+          <a class="cta en" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y5ZHR86C3J3XJ" target="_blank" rel="noopener">Book now (PayPal)</a>
+          <div class="hr"></div>
+          <div class="row">
+            <span class="price">$49</span>
+            <span class="note">Personalized PDF included after the event.</span>
+          </div>
+        </div>
+      </div>
+      <p class="foot">Note: Spiritual practice & coaching, not therapy/medical.</p>
+    </div>
+  </div>
+</body>
+</html>
